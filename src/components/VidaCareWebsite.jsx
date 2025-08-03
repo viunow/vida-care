@@ -1,16 +1,15 @@
-"use client";
+'use client';
 
-import React from "react";
-import { Header } from "./Header";
-import { Hero } from "./Hero";
-import { About } from "./About";
-import { Services } from "./Services";
-import { Benefits } from "./Benefits";
-import { Contact } from "./Contact";
-import { Footer } from "./Footer";
+import React from 'react';
+import { Header } from './Header';
+import { Hero } from './Hero';
+import { About } from './About';
+import { Services } from './Services';
+import { Benefits } from './Benefits';
+import { Contact } from './Contact';
+import { Footer } from './Footer';
 
-// Componente Principal
-const VidaCareWebsite = () => {
+const VitaLarWebsite = () => {
   return (
     <div className="font-sans">
       <Header />
@@ -24,4 +23,4 @@ const VidaCareWebsite = () => {
   );
 };
 
-export default VidaCareWebsite;
+export default VitaLarWebsite;

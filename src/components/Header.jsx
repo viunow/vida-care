@@ -1,5 +1,7 @@
-import React, { useState } from "react";
-import { Heart, Menu, X } from "lucide-react";
+import React, { useState } from 'react';
+import { Heart, Menu, X } from 'lucide-react';
+import logo from '../../public/logo/VitaLar.svg';
+import Image from 'next/image';
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -7,26 +9,35 @@ export const Header = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
 
   return (
     <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-primary-100 z-50 shadow-sm">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-fit">
           {/* Logo */}
           <div
-            className="flex items-center space-x-2 hover:cursor-pointer"
+            className="flex items-center  hover:cursor-pointer"
             onClick={() => scrollToTop()}
           >
-            <div className="w-10 h-10 bg-gradient-to-br from-primary-500 to-secondary-300 rounded-lg flex items-center justify-center shadow-glow">
-              <Heart className="w-6 h-6 text-white" />
-            </div>
-            <div className="hidden sm:block">
-              <h1 className="text-xl font-bold text-primary-700">VidaCare</h1>
-              <p className="text-xs text-primary-600">Domiciliar</p>
-            </div>
+            <Image
+              src={logo}
+              alt="Logo VitaLar"
+              width={120}
+              height={120}
+              quality={100}
+              className="hidden lg:block"
+            />
+            <Image
+              src={logo}
+              alt="Logo VitaLar"
+              width={100}
+              height={120}
+              quality={100}
+              className="block lg:hidden"
+            />
           </div>
 
           {/* Navigation Desktop */}

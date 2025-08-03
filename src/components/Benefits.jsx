@@ -1,6 +1,6 @@
-import React from "react";
-import { Home, Shield, Clock, Award, Star } from "lucide-react";
-import { useScrollAnimation } from "./useScrollAnimation";
+import React from 'react';
+import { Home, Shield, Clock, Award, Star } from 'lucide-react';
+import { useScrollAnimation } from './useScrollAnimation';
 
 export const Benefits = () => {
   const isVisible = useScrollAnimation();
@@ -8,23 +8,23 @@ export const Benefits = () => {
   const beneficios = [
     {
       icon: <Home className="w-6 h-6" />,
-      title: "Conforto do Lar",
-      description: "Tratamento no ambiente familiar e acolhedor",
+      title: 'Conforto do Lar',
+      description: 'Tratamento no ambiente familiar e acolhedor',
     },
     {
       icon: <Shield className="w-6 h-6" />,
-      title: "Menor Risco de Infecção",
-      description: "Reduz exposição a infecções hospitalares",
+      title: 'Menor Risco de Infecção',
+      description: 'Reduz exposição a infecções hospitalares',
     },
     {
       icon: <Clock className="w-6 h-6" />,
-      title: "Atendimento 24h",
-      description: "Cuidados disponíveis quando necessário",
+      title: 'Atendimento 24h',
+      description: 'Cuidados disponíveis quando necessário',
     },
     {
       icon: <Award className="w-6 h-6" />,
-      title: "Qualidade Comprovada",
-      description: "Profissionais altamente qualificados",
+      title: 'Qualidade Comprovada',
+      description: 'Profissionais altamente qualificados',
     },
   ];
 
@@ -35,9 +35,9 @@ export const Benefits = () => {
           id="beneficios-header"
           data-animate
           className={`text-center mb-16 transition-all duration-1000 ${
-            isVisible["beneficios-header"]
-              ? "opacity-100 transform translate-y-0"
-              : "opacity-0 transform translate-y-10"
+            isVisible['beneficios-header']
+              ? 'opacity-100 transform translate-y-0'
+              : 'opacity-0 transform translate-y-10'
           }`}
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-primary-800 mb-4">
@@ -57,8 +57,8 @@ export const Benefits = () => {
               data-animate
               className={`text-center p-6 rounded-xl border border-primary-100 hover:border-primary-300 transition-all duration-500 transform hover:-translate-y-1 hover:shadow-glow ${
                 isVisible[`beneficio-${index}`]
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-10"
+                  ? 'opacity-100 translate-y-0'
+                  : 'opacity-0 translate-y-10'
               }`}
               style={{ transitionDelay: `${index * 150}ms` }}
             >
@@ -76,7 +76,7 @@ export const Benefits = () => {
         </div>
 
         {/* Depoimentos */}
-        <div
+        {/* <div
           id="depoimentos"
           data-animate
           className={`mt-20 transition-all duration-1000 ${
@@ -128,7 +128,7 @@ export const Benefits = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

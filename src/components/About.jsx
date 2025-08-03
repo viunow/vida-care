@@ -19,7 +19,7 @@ export const About = () => {
         >
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-primary-800 mb-4">
-              Sobre a VidaCare Domiciliar
+              Sobre a VitaLar Home Care
             </h2>
             <p className="text-lg text-primary-600 max-w-3xl mx-auto">
               Somos especialistas em home care, oferecendo assistência

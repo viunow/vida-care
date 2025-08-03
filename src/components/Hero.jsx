@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
-import { ArrowRight } from "lucide-react";
-import { HomeCareCarousel } from "./HomeCareCarousel";
+import React, { useEffect, useState } from 'react';
+import { ArrowRight } from 'lucide-react';
+import { HomeCareCarousel } from './HomeCareCarousel';
 
 export const Hero = () => {
-  const [currentText, setCurrentText] = useState("");
+  const [currentText, setCurrentText] = useState('');
   const [textIndex, setTextIndex] = useState(0);
-  const texts = ["Cuidado", "Carinho", "Atenção", "Amor"];
+  const texts = ['Cuidado', 'Carinho', 'Atenção', 'Amor'];
 
   useEffect(() => {
     const typewriterEffect = () => {
@@ -20,7 +20,7 @@ export const Hero = () => {
           clearInterval(timer);
           setTimeout(() => {
             setTextIndex((prev) => (prev + 1) % texts.length);
-            setCurrentText("");
+            setCurrentText('');
           }, 2000);
         }
       }, 150);
@@ -51,7 +51,7 @@ export const Hero = () => {
                 </span>
               </h1>
               <p className="text-lg sm:text-xl text-primary-700 max-w-xl">
-                VidaCare, uma assistência domiciliar humanizada que coloca o
+                Vita Lar, uma assistência domiciliar humanizada que coloca o
                 bem-estar do paciente e da família em primeiro lugar.
               </p>
             </div>
@@ -59,7 +59,7 @@ export const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="#contato"
-                className="bg-secondary-400 text-white px-8 py-4 rounded-lg hover:bg-secondary-500 transition-all shadow-glow hover:shadow-glow-lg transform text-center font-semibold"
+                className="bg-secondary-400 text-white px-8 py-4 rounded-lg hover:bg-primary-500 transition-all shadow-glow hover:shadow-glow-lg transform text-center font-semibold"
               >
                 Solicitar Orçamento
                 <ArrowRight className="inline-block ml-2 w-5 h-5" />
@@ -73,7 +73,7 @@ export const Hero = () => {
             </div>
 
             {/* Stats */}
-            <div className="flex flex-row gap-28 flex-wrap items-center pt-8">
+            {/* <div className="flex flex-row gap-28 flex-wrap items-center pt-8">
               <div className="text-center">
                 <div className="text-2xl sm:text-3xl font-bold text-primary-600">
                   24h
@@ -86,7 +86,7 @@ export const Hero = () => {
                 </div>
                 <div className="text-sm text-primary-700">Humanizado</div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Carousel de Imagens */}

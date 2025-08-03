@@ -1,34 +1,31 @@
-import React from "react";
-import { Phone, Mail, MapPin } from "lucide-react";
-import { useScrollAnimation } from "./useScrollAnimation";
+import React from 'react';
+import { Phone, Mail, MapPin } from 'lucide-react';
+import { useScrollAnimation } from './useScrollAnimation';
 
 export const Contact = () => {
   const isVisible = useScrollAnimation();
 
   // Função para abrir WhatsApp
   const openWhatsApp = () => {
-    const phoneNumber = "5554999999999"; // Formato internacional sem + e sem espaços
+    const phoneNumber = '5554999999999'; // Formato internacional sem + e sem espaços
     const message =
-      "Olá! Gostaria de solicitar informações sobre os serviços de home care da VidaCare Domiciliar.";
+      'Olá! Gostaria de solicitar informações sobre os serviços de home care da VitaLar Home Care.';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-      message
+      message,
     )}`;
-    window.open(whatsappUrl, "_blank");
+    window.open(whatsappUrl, '_blank');
   };
 
   return (
-    <section
-      id="contato"
-      className="py-20 bg-gradient-to-br from-primary-800 to-primary-900 text-white"
-    >
+    <section id="contato" className="py-20 bg-primary-500 text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div
           id="contato-header"
           data-animate
           className={`text-center mb-16 transition-all duration-1000 ${
-            isVisible["contato-header"]
-              ? "opacity-100 transform translate-y-0"
-              : "opacity-0 transform translate-y-10"
+            isVisible['contato-header']
+              ? 'opacity-100 transform translate-y-0'
+              : 'opacity-0 transform translate-y-10'
           }`}
         >
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
@@ -46,9 +43,9 @@ export const Contact = () => {
             id="contato-info"
             data-animate
             className={`grid md:grid-cols-3 gap-8 mb-12 transition-all duration-1000 ${
-              isVisible["contato-info"]
-                ? "opacity-100 transform translate-y-0"
-                : "opacity-0 transform translate-y-10"
+              isVisible['contato-info']
+                ? 'opacity-100 transform translate-y-0'
+                : 'opacity-0 transform translate-y-10'
             }`}
           >
             <div className="text-center">
@@ -64,7 +61,7 @@ export const Contact = () => {
                 <Mail className="w-8 h-8" />
               </div>
               <h3 className="font-bold text-lg mb-2">E-mail</h3>
-              <p className="text-primary-100">contato@vidacare.com.br</p>
+              <p className="text-primary-100">contato@vitalar.com.br</p>
             </div>
 
             <div className="text-center">
@@ -77,13 +74,13 @@ export const Contact = () => {
           </div>
 
           {/* Horário de Atendimento */}
-          <div
+          {/* <div
             id="contato-horario"
             data-animate
             className={`bg-white/10 p-8 rounded-2xl backdrop-blur-sm text-center mb-12 transition-all duration-1000 ${
-              isVisible["contato-horario"]
-                ? "opacity-100 transform translate-y-0"
-                : "opacity-0 transform translate-y-10"
+              isVisible['contato-horario']
+                ? 'opacity-100 transform translate-y-0'
+                : 'opacity-0 transform translate-y-10'
             }`}
           >
             <h3 className="font-bold text-xl mb-6">Horário de Atendimento</h3>
@@ -107,16 +104,16 @@ export const Contact = () => {
                 <p>24 horas</p>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Botão WhatsApp Central */}
           <div
             id="contato-whatsapp"
             data-animate
             className={`text-center transition-all duration-1000 ${
-              isVisible["contato-whatsapp"]
-                ? "opacity-100 transform translate-y-0"
-                : "opacity-0 transform translate-y-10"
+              isVisible['contato-whatsapp']
+                ? 'opacity-100 transform translate-y-0'
+                : 'opacity-0 transform translate-y-10'
             }`}
           >
             <div className="bg-white/10 p-8 rounded-2xl backdrop-blur-sm">

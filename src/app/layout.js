@@ -1,52 +1,52 @@
-import { Plus_Jakarta_Sans } from "next/font/google";
-import "./globals.css";
-import Script from "next/script";
+import { Plus_Jakarta_Sans } from 'next/font/google';
+import './globals.css';
+import Script from 'next/script';
 
 const plusJakarta = Plus_Jakarta_Sans({
-  subsets: ["latin"],
-  variable: "--font-plus-jakarta",
+  subsets: ['latin'],
+  variable: '--font-plus-jakarta',
 });
 
 export const metadata = {
   title:
-    "VidaCare Domiciliar - Home Care em Caxias do Sul | Assistência Domiciliar",
+    'VitaLar Domiciliar - Home Care em Caxias do Sul | Assistência Domiciliar',
   description:
-    "Serviços de home care e assistência domiciliar humanizada em Caxias do Sul. Cuidados de enfermagem, reabilitação e cuidados com idosos no conforto do seu lar.",
+    'Serviços de home care e assistência domiciliar humanizada em Caxias do Sul. Cuidados de enfermagem, reabilitação e cuidados com idosos no conforto do seu lar.',
   keywords:
-    "home care, assistência domiciliar, cuidados domiciliares, enfermagem domiciliar, cuidados com idosos, Caxias do Sul, saúde domiciliar",
-  authors: [{ name: "VidaCare Domiciliar" }],
-  creator: "VidaCare Domiciliar",
-  publisher: "VidaCare Domiciliar",
-  metadataBase: new URL("https://vidacare.com.br"),
+    'home care, assistência domiciliar, cuidados domiciliares, enfermagem domiciliar, cuidados com idosos, Caxias do Sul, saúde domiciliar',
+  authors: [{ name: 'VitaLar Domiciliar' }],
+  creator: 'VitaLar Domiciliar',
+  publisher: 'VitaLar Domiciliar',
+  metadataBase: new URL('https://vitalar.com.br'),
   alternates: {
-    canonical: "/",
+    canonical: '/',
     languages: {
-      "pt-BR": "/pt-BR",
+      'pt-BR': '/pt-BR',
     },
   },
   openGraph: {
-    title: "VidaCare Domiciliar - Home Care Humanizado",
+    title: 'VitaLar Domiciliar - Home Care Humanizado',
     description:
-      "Assistência domiciliar de qualidade com foco no cuidado humanizado e bem-estar do paciente e família.",
-    url: "https://vidacare.com.br",
-    siteName: "VidaCare Domiciliar",
+      'Assistência domiciliar de qualidade com foco no cuidado humanizado e bem-estar do paciente e família.',
+    url: 'https://vitalar.com.br',
+    siteName: 'VitaLar Domiciliar',
     images: [
       {
-        url: "/og-image.jpg",
+        url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: "VidaCare Domiciliar - Home Care",
+        alt: 'VitaLar Domiciliar - Home Care',
       },
     ],
-    locale: "pt_BR",
-    type: "website",
+    locale: 'pt_BR',
+    type: 'website',
   },
   twitter: {
-    card: "summary_large_image",
-    title: "VidaCare Domiciliar - Home Care Humanizado",
+    card: 'summary_large_image',
+    title: 'VitaLar Domiciliar - Home Care Humanizado',
     description:
-      "Assistência domiciliar de qualidade com foco no cuidado humanizado.",
-    images: ["/og-image.jpg"],
+      'Assistência domiciliar de qualidade com foco no cuidado humanizado.',
+    images: ['/og-image.jpg'],
   },
   robots: {
     index: true,
@@ -54,15 +54,15 @@ export const metadata = {
     googleBot: {
       index: true,
       follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
     },
   },
   verification: {
-    google: "google-site-verification-code-here",
-    yandex: "yandex-verification-code-here",
-    yahoo: "yahoo-verification-code-here",
+    google: 'google-site-verification-code-here',
+    yandex: 'yandex-verification-code-here',
+    yahoo: 'yahoo-verification-code-here',
   },
 };
 
@@ -75,85 +75,85 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "MedicalBusiness",
-              name: "VidaCare Domiciliar",
+              '@context': 'https://schema.org',
+              '@type': 'MedicalBusiness',
+              name: 'VitaLar Domiciliar',
               description:
-                "Serviços de home care e assistência domiciliar com foco em cuidados humanizados e qualidade de vida.",
-              url: "https://vidacare.com.br",
-              telephone: "+55-54-99999-9999",
-              email: "contato@vidacare.com.br",
+                'Serviços de home care e assistência domiciliar com foco em cuidados humanizados e qualidade de vida.',
+              url: 'https://vitalar.com.br',
+              telephone: '+55-54-99999-9999',
+              email: 'contato@vitalar.com.br',
               address: {
-                "@type": "PostalAddress",
-                addressCountry: "BR",
-                addressRegion: "RS",
-                addressLocality: "Caxias do Sul",
-                streetAddress: "Rua das Flores, 123",
+                '@type': 'PostalAddress',
+                addressCountry: 'BR',
+                addressRegion: 'RS',
+                addressLocality: 'Caxias do Sul',
+                streetAddress: 'Rua das Flores, 123',
               },
               geo: {
-                "@type": "GeoCoordinates",
-                latitude: "-29.1678",
-                longitude: "-51.1794",
+                '@type': 'GeoCoordinates',
+                latitude: '-29.1678',
+                longitude: '-51.1794',
               },
-              serviceType: "Home Care Services",
+              serviceType: 'Home Care Services',
               medicalSpecialty: [
-                "Nursing Care",
-                "Elderly Care",
-                "Physical Therapy",
-                "Home Health Care",
+                'Nursing Care',
+                'Elderly Care',
+                'Physical Therapy',
+                'Home Health Care',
               ],
-              priceRange: "$$",
-              openingHours: ["Mo-Fr 08:00-18:00", "Sa 08:00-12:00"],
+              priceRange: '$$',
+              openingHours: ['Mo-Fr 08:00-18:00', 'Sa 08:00-12:00'],
               hasOfferCatalog: {
-                "@type": "OfferCatalog",
-                name: "Serviços de Home Care",
+                '@type': 'OfferCatalog',
+                name: 'Serviços de Home Care',
                 itemListElement: [
                   {
-                    "@type": "Offer",
+                    '@type': 'Offer',
                     itemOffered: {
-                      "@type": "Service",
-                      name: "Atendimento de Enfermagem",
+                      '@type': 'Service',
+                      name: 'Atendimento de Enfermagem',
                       description:
-                        "Cuidados especializados de enfermagem no domicílio",
+                        'Cuidados especializados de enfermagem no domicílio',
                     },
                   },
                   {
-                    "@type": "Offer",
+                    '@type': 'Offer',
                     itemOffered: {
-                      "@type": "Service",
-                      name: "Cuidados com Idosos",
+                      '@type': 'Service',
+                      name: 'Cuidados com Idosos',
                       description:
-                        "Assistência especializada para a terceira idade",
+                        'Assistência especializada para a terceira idade',
                     },
                   },
                   {
-                    "@type": "Offer",
+                    '@type': 'Offer',
                     itemOffered: {
-                      "@type": "Service",
-                      name: "Reabilitação Domiciliar",
-                      description: "Fisioterapia e terapia ocupacional em casa",
+                      '@type': 'Service',
+                      name: 'Reabilitação Domiciliar',
+                      description: 'Fisioterapia e terapia ocupacional em casa',
                     },
                   },
                 ],
               },
               aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: "5.0",
-                reviewCount: "50",
+                '@type': 'AggregateRating',
+                ratingValue: '5.0',
+                reviewCount: '50',
               },
               review: [
                 {
-                  "@type": "Review",
+                  '@type': 'Review',
                   author: {
-                    "@type": "Person",
-                    name: "Maria Silva",
+                    '@type': 'Person',
+                    name: 'Maria Silva',
                   },
                   reviewRating: {
-                    "@type": "Rating",
-                    ratingValue: "5",
+                    '@type': 'Rating',
+                    ratingValue: '5',
                   },
                   reviewBody:
-                    "O atendimento foi excepcional. Minha mãe se sentiu muito mais confortável em casa.",
+                    'O atendimento foi excepcional. Minha mãe se sentiu muito mais confortável em casa.',
                 },
               ],
             }),
@@ -196,14 +196,14 @@ export default function RootLayout({ children }) {
         />
       </head>
 
-      <body className={`${plusJakarta.className} antialiased`}>
+      <body className={`${plusJakarta.className} antialiased bg-white`}>
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
             height="0"
             width="0"
-            style={{ display: "none", visibility: "hidden" }}
+            style={{ display: 'none', visibility: 'hidden' }}
           />
         </noscript>
 
